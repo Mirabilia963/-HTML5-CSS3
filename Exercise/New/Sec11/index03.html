@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keat</title>
+
+	<style>
+         /*-----------웹 문서 제작 시 초기화 스타일-------*/
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+        img {
+            display: block;
+            border: none;
+        }
+        body {
+            font-family: 'Verdana';
+            font-size: 14px;
+            color: black;
+            line-height: 28px;
+        }
+        /* header */
+        header {
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 10px;
+            border: 2px solid black;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        /* logo */
+        header h1 {
+            width: 200px;
+            line-height: 100px;
+            background-color: yellow;
+            float: left;
+            text-align: center;
+        }
+        /* 오른쪽 메뉴 */
+        nav {
+            float: right;
+            overflow: hidden;
+            position: relative;
+        }
+        nav ul {
+            overflow: hidden;
+            background-color: antiquewhite;
+        }
+        nav ul:nth-of-type(1) li {
+            float: left;
+            padding-left: 20px;
+            background-color: yellow;
+            line-height: 30px;
+        }
+        nav ul:nth-of-type(2) li {
+            float: left;
+            padding-left: 20px;
+            background-color: orange;
+            line-height: 30px;
+            margin-top: 40px;
+        }
+        #main {
+            width: 1000px;
+            overflow: hidden;
+            margin: 10px auto;
+        }
+        #main section {
+            width: 700px;
+            overflow: hidden;
+            float: left;
+        }
+        #main section article {
+            width: 700px;
+            border: 2px solid black;
+            overflow: hidden;
+            padding: 20px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        article > h2 {
+            background-color: purple;
+        }
+        aside {
+            width: 280px;
+            float: right;
+            overflow: hidden;
+            border: 2px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        aside .banner {
+            background-color: gray;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            width: 1000px;
+            height: 50px;
+            line-height: 50px;
+            margin: 10px auto;
+            border: 2px solid black;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+	</style>
+</head>
+<body>
+    <!--header(시맨틱 태그)-->
+   <header>
+    <h1>WEB-logo</h1>
+    <!--nav(시맨틱 태그)-->
+    <nav>
+        <ul>
+            <li>menu-1</li>
+            <li>menu-1</li>
+            <li>menu-1</li>
+            <li>menu-1</li>
+        </ul>
+
+        <ul>
+            <li>menu-2</li>
+            <li>menu-2</li>
+            <li>menu-2</li>
+            <li>menu-2</li>
+        </ul>
+    </nav>
+   </header>
+
+   <!--본문 감싸주는 박스는 일반 선택자 박스로 지정-->
+   <div id="main">
+    <!--왼쪽 section (시맨틱 태그)-->
+    <section>
+        <!--article (시맨틱 태그)-->
+        <article>
+            <h2>Main Article</h2>
+            <p>
+                ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools. 
+            </p>
+        </article>
+        <!--article (시맨틱 태그)-->
+        <article>
+            <h2>Main Article</h2>
+            <p>
+                ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools. 
+            </p>
+        </article>
+        <!--article (시맨틱 태그)-->
+        <article>
+            <h2>Main Article</h2>
+            <p>
+                ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools. 
+            </p>
+        </article>
+    </section>
+    <!--오른쪽 aside (시맨틱 태그)-->
+    <aside>
+        <h2>Right aside</h2>
+        <p>
+            ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.
+        </p>
+        <input type="email" />
+        <button>mailto</button>
+        <div class="bannerbox">
+            <h2>TEXT</h2>
+            <p>banner</p>
+        </div>
+    </aside>
+   </div>
+   <!--하단 footer(시맨틱 태그)-->
+   <footer>
+    <p>HTML5 COPYRIGHT</p>
+   </footer>
+</body>
+</html>
